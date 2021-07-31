@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <!-- START OF TITLE  -->
     <title>Backroads Company</title>
     <!-- END OF TITLE  -->
@@ -27,6 +28,56 @@
     <!-- END OF CUSTOM STYLE SHEET -->
   </head>
   <body>
+    <!-- START OF NAVBAR -->
+    <nav class="navbar">
+      <section class="navbar-center">
+        <div class="navbar-header">
+          <img src="./images/logo.svg" alt="" />
+          <span class="toggle-btn" id="toggle-btn">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+        <!-- START OF FOOTER LINKS -->
+        <div class="navbar-links-container">
+          <ul class="navbar-links">
+            <li><a href="#home" class="navbar-link scroll-link">home</a></li>
+            <li><a href="#about" class="navbar-link scroll-link">about</a></li>
+            <li>
+              <a href="#services" class="navbar-link scroll-link">services</a>
+            </li>
+            <li>
+              <a href="#featured" class="navbar-link scroll-link">featured</a>
+            </li>
+            <li>
+              <a href="#gallery" class="navbar-link scroll-link">gallery</a>
+            </li>
+          </ul>
+        </div>
+        <!-- END OF navbar LINKS -->
+
+        <!-- START OF navbar SOCIAL LINKS -->
+        <ul class="navbar-social-links">
+          <li>
+            <a href="https://facebook.com" class="navbar-social-link">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" class="navbar-social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://squarespace.com" class="navbar-social-link">
+              <i class="fab fa-squarespace"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- END OF navbar SOCIAL LINKS -->
+      </section>
+    </nav>
+    <!-- END OF NAVBAR -->
+
     <!-- START OF HEADER -->
     <header id="home">
       <div class="hero">
@@ -36,7 +87,9 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
             dolore illo fuga dolor obcaecati delectus repudiandae.
           </p>
-          <a href="#" class="btn btn-banner">explore tours</a>
+          <a href="#featured" class="btn btn-banner scroll-link"
+            >explore tours</a
+          >
         </div>
       </div>
     </header>
@@ -69,7 +122,7 @@
             officiis non, nam deleniti odio! Distinctio eveniet fugiat ratione
             reprehenderit.
           </p>
-          <a href="#" class="btn btn-about">read more</a>
+          <a href="#home" class="btn btn-about scroll-link">read more</a>
         </div>
       </article>
     </section>
@@ -321,13 +374,21 @@
 
     <!-- START OF FOOTER -->
     <footer class="footer section" id="footer">
+      <!-- START OF FOOTER LINKS -->
       <ul class="footer-links">
-        <li><a href="#home" class="footer-link">home</a></li>
-        <li><a href="#about" class="footer-link">about</a></li>
-        <li><a href="#services" class="footer-link">services</a></li>
-        <li><a href="#featured" class="footer-link">featured</a></li>
-        <li><a href="#gallery" class="footer-link">gallery</a></li>
+        <li><a href="#home" class="footer-link scroll-link">home</a></li>
+        <li><a href="#about" class="footer-link scroll-link">about</a></li>
+        <li>
+          <a href="#services" class="footer-link scroll-link">services</a>
+        </li>
+        <li>
+          <a href="#featured" class="footer-link scroll-link">featured</a>
+        </li>
+        <li><a href="#gallery" class="footer-link scroll-link">gallery</a></li>
       </ul>
+      <!-- END OF FOOTER LINKS -->
+
+      <!-- START OF FOOTER SOCIAL LINKS -->
       <ul class="footer-social-links">
         <li>
           <a href="https://facebook.com" class="footer-social-link">
@@ -345,11 +406,13 @@
           </a>
         </li>
       </ul>
+      <!-- END OF FOOTER SOCIAL LINKS -->
       <p class="copyright">
         copyright &copy; Backroads travel tours company
         <span id="date"> 2021. </span>all rights reserved
       </p>
     </footer>
     <!-- END OF FOOTER -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
